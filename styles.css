@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+:root{
+    --background-color:#020403;
+    --font_color: #ADADAD;
+    --white:  #FFFFFF;
+
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main{
+    background-color: var(--background-color);
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.home_img_content{
+    height: 230px;
+    width: 200px;
+    border-radius: 160px;
+    overflow: hidden; 
+    margin: auto;
+    margin-bottom: 3rem;    
+}
+ 
+.home_tittle {
+    font-family:"Rubik", semibold;
+    color: var(--white);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;       
+}
+
+.home_semi_tittle {
+    font-family:  "Rubik", semibold;
+    color: var(--font_color);
+    font-size: 18px;
+    display: flex;
+    justify-content: center; 
+      
+}
+
+.home_item_social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.items_social{
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.about_me h2{
+    color: var(--white);
+    padding: 0 0 2rem;
+}
+
+ 
+.about_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: "Rubik";
+    font-size: 16px;
+    color: var(--font_color);
+    text-align: center;
+}
+
+.info_skills{
+    font-family: "Rubik";
+    color: var(--font_color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info_skills h2{
+    font-family: "Rubik", Medium;
+    color: var(--white);
+    font-size: 25px;
+    margin: 0 0 3rem;
+}
+
+.info_experience h2{
+    font-family: "Rubik", Medium;
+    font-size: 25px;
+    color: var(--white);
+}
+
+.info_experience{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info_experience p{
+    font-family: "Rubik", Regular;
+    color: var(--font_color);
+}
+
+.info_experience_data{
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.briecfase h2{
+    font-family: "Rubik", Medium;
+    font-size: 25px;
+    color: white;
+    padding: 8rem 0 1rem 1.5rem;
+}
+
+.briecfase_item{
+    display: flex;
+    flex-direction: column;  
+     align-items: center;
+     gap: 1rem;
+}
+
+.contact h2{
+    font-family: "Rubik", Medium;
+    font-size: 25px;
+    color: var(--white);
+    margin: 5rem 0 2rem 1.5rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact_item{
+    display: flex;
+    margin: auto;
+    gap: 1rem;  
+}
+
+ 
+.contact_item p{
+    font-family: "Rubik",Medium;
+    font-size: 18px;
+    color: var(--font_color);
+}
+
+.contact_item_data{  
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.contact_img_content{
+    border-radius:100%;
+    border: solid 1px #FFFFFF;
+}
+
+.avatar{
+    padding: 0.8rem;
+}
+
+
+
+
+ 
+
+
+ 
+
+
