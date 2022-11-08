@@ -12,170 +12,200 @@
 
 <body>
 
+    <nav class="navbar">
+
+        <ul class="menu ">
+          <li><a  href="#home">Home</a></li>
+          <li><a href="#about_me">Acerca de mi</a></li>
+          <li><a href="#my_skills">Mis habilidades</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#briecfase">Portafolio</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+    
+        <div class="icon_menu">
+          <img src="icons/icon-hamburger.svg" alt="icon-hamburger">
+        </div>
+
+    </nav>
+
+
+
     <main>
+
     <section class="home" id="home">
         <div class="home_content">
             <div class="home_content_item">
                 <div class="home_img_content">
                     <img src="images/me.png" alt="yeison">
                 </div>
+
                 <div class="home_fonts">
                     <h1 class="home_semi_tittle">Hola, soy Jeison</h1>
                     <h1 class="home_tittle">Diseñador y <br>desarrollador <br>web </h1>
-                     
                 </div>
+
                 <div class="home_item_social">
                     <ul class="items_social">
                         <li>
-                          <a href="#">
+                            <a href="#">
                             <img src="icons/linkedin.svg" alt="linkedin">
-                          </a>
-                        </li>
-                  
+                            </a>
+                        </li>                
                         <li>
-                          <a href="#">
+                            <a href="#">
                             <img src="icons/instagram.svg" alt="instagram">
-                          </a>
+                            </a>
                         </li>
-                  
                         <li>
-                          <a href="#">
+                            <a href="#">
                             <img src="icons/twitter.svg" alt="twitter">
-                          </a>
+                            </a>
                         </li>
-                  
-                      </ul>   
+                    </ul>                     
                 </div>
             </div>
         </div>
 
     </section>
 
-    <section class="info" id="info"> 
+    <section class="info" id="about_me"> 
         <div class="about_me">
             <h2>Acerca de mi</h2>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi eos expedita quia autem nostrum sunt
-                 voluptatem consectetur hic, molestias laboriosam voluptas nemo qui, dolore provident itaque odit! Veniam, 
-                 perspiciatis nemo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur sunt quam quidem, 
-                 incidunt rerum quas excepturi id sit, maiores aspernatur sapiente earum! Impedit corporis aperiam consequuntur 
-                 voluptate repellendus reiciendis debitis. Jeison
+                voluptatem consectetur hic, molestias laboriosam voluptas nemo qui, dolore provident itaque odit! Veniam, 
+                perspiciatis nemo?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur sunt quam quidem, 
+                incidunt rerum quas excepturi id sit, maiores aspernatur sapiente earum! Impedit corporis aperiam consequuntur 
+                voluptate repellendus reiciendis debitis. Jeison
             </p>
         </div>
-        <div class="info_skills">
+
+
+        <div class="info_skills" id="my_skills">
+
             <h2>Mis habilidades</h2>   
             
-            <img src="icons/mobile.svg" alt="mobile">
-            <p>Mobile app design</p>
-        
-            <img src="icons/material.svg" alt="creacion de sistemas">
-            <p>Creacion de sistemas de diseño</p>
-        
-            <img src="icons/motion.svg" alt="motion design">
-            <p>Motion Design</p>
-        
-            <img src="icons/web.svg" alt="desarrollo">
-            <p>Desarrollo web</p>
+            <div class="info_skills_item">
 
-        </div>
-        <div class="info_experience">
-            <h2>Experiencia</h2>
-            <div>
-
-                <div class="info_experience_data">
-
+                <div class="item_mobile">
                     <div>
-                        <p>2016-2018</p>
+                        <img src="icons/mobile.svg" alt="mobile">
                     </div>
-                    <div>
-                        <p>Visual designer</p>
-                        <p>Wizeline</p>
+                    <p>Mobile app design</p>
+                </div>
+            
+                <div class="item_material">
+                    <div >
+                        <img  src="icons/material.svg" alt="creacion de sistemas">
                     </div>
+                    <p>Creacion de sistemas de diseño</p>
+                </div>
+            
+                <div class="item_motion">
+                    <div >
+                        <img  src="icons/motion.svg" alt="motion design">
+                    </div>
+                    <p>Motion Design</p>
+                </div>
+                
                     
-                </div>
-
-                <hr>
-
-
-                <div class="info_experience_data">
-
+                <div class="item_web">
                     <div>
-                        <p>2016-2018</p>
+                        <img  src="icons/web.svg" alt="desarrollo">
                     </div>
-                    <div>
-                        <p>Visual designer</p>
-                        <p>Wizeline</p>
-                    </div>
-                    
+                    <p>Desarrollo web</p>
                 </div>
-
-                    <hr>
-
-                    <div class="info_experience_data">
-
-                        <div>
-                            <p>2016-2018</p>
-                        </div>
-                        <div>
-                            <p>Visual designer</p>
-                            <p>Wizeline</p>
-                        </div>
-                        
-                    </div>  
-                </div>
+                
             </div>
+
         </div>
-        </section>
+    </section>
+
+    <section class="info_experience" id="experience">
+        <div class="info_experience_subtittle">
+            <h2>Experiencia</h2>
+        </div>
+    
+        <div class="info_experience_data">
+            <div class="info_experience_datap">
+                <p>2016-2018</p>
+            </div>
+            <div>
+                <h4>Visual designer</h4>
+                <p>Wizeline</p>
+            </div>           
+        </div>
+        <hr>
+    
+        <div class="info_experience_data">
+            <div class="info_experience_datap">
+                <p>2016-2018</p>
+            </div>
+            <div>
+                <h4>Visual designer</h4>
+                <p>Wizeline</p>
+            </div>           
+        </div>
+        <hr>
+    
+        <div class="info_experience_data">
+            <div class="info_experience_datap">
+                <p>2016-2018</p>
+            </div>
+            <div>
+                <h4>Visual designer</h4>
+                <p>Wizeline</p>
+            </div>                
+        </div>
+    </section>      
 
     <section class="briecfase" id="briecfase">
         <h2>Portafolio</h2>
 
-       <div class="briecfase_item">
-        <div>
-            <img src="images/ejemplo 1.png" alt="example_one">
-        </div>
-        <div>
-            <img src="images/ejemplo 2.png" alt="example_two">
-        </div>
-        <div >
+        <div class="briecfase_item">
+            <div>
+                <img src="images/ejemplo 1.png" alt="example_one">
+            </div>
+            <div>
+                <img src="images/ejemplo 2.png" alt="example_two">
+            </div>
+            <div >
             <img src="images/ejemplo 3.png" alt="example_three">
+            </div>
         </div>
-       </div>
     </section>
 
     <section class="contact" id="contact">
         <h2>Contacto</h2>
 
-        
-
         <div class="contact_item">
 
             <div class="contact_item_data">
-              <div class="contact_img_content">
-                <img class="avatar" src="icons/phone.svg" alt="phone">
-              </div>
-               <p>Numero celular <br> 3155606218</p>
+                <div class="contact_img_content">
+                    <img class="avatar" src="icons/phone.svg" alt="phone">
+                </div>
+                <h2>Numero celular</h2>
+                <p>3155606214</p>
             </div>
 
             <div class="contact_item_data"> 
                 <div class="contact_img_content">
                     <img class="avatar" src="icons/mail 1.svg" alt="mail">
                 </div>
-               <p>Email <br>YYeisonfferley@Gmail.com</p>
-            </div>
+                <h2>Email</h2>
+                <p>yyeison@gmail.com</p>
+            </div>   
+        </div>
 
-            
-            
-       </div>
-
-       <div>
-        <h2>Hecho con <i class="fa-sharp fa-solid fa-heart"></i>  en Academlo</h2>
-       </div>
-        
+        <div class="footer">
+            <p>Hecho con <i class="fa-sharp fa-solid fa-heart"></i> en Academlo</p>
+        </div>   
     </section>
+
 </main>
 
-
+<script src="main.js" type="module" ></script>
 
 </body>
 </html>

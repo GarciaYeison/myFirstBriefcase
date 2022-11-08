@@ -12,7 +12,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Rubik";
+    font-family: "Rubik",sans-serif;
+    background-color: var(--background-color);
 }
 
 img {
@@ -27,6 +28,7 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    
 }
 
 html {
@@ -34,8 +36,89 @@ html {
 }
 
 main{
+    display: flex;
+    margin: auto;
+    min-width: 350px;
+    max-width: 350px;
+    flex-direction: column;
+    background-color:transparent;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 1rem;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
     background-color: var(--background-color);
 }
+
+.menu a {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.menu :hover{
+    color:var(--font_color);
+}
+ 
+ 
+@media(min-width:750px){
+    .navbar{
+        
+        justify-content: center;
+         
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu a{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.icon_menu {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+
+    .icon_menu {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--background-color);
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+    }
+
+    .menu_show {
+        transform: translateX(0);
+    }
+}
+
+
+
+
 .home{
     min-height: 100vh;
     display: flex;
@@ -49,11 +132,12 @@ main{
     border-radius: 160px;
     overflow: hidden; 
     margin: auto;
+    margin-top: 5rem;
     margin-bottom: 3rem;    
 }
  
 .home_tittle {
-    font-family:"Rubik", semibold;
+    font-weight: 600;
     color: var(--white);
     font-size: 40px;
     display: flex;
@@ -62,9 +146,9 @@ main{
 }
 
 .home_semi_tittle {
-    font-family:  "Rubik", semibold;
+    font-weight: 600;
     color: var(--font_color);
-    font-size: 18px;
+    font-size: 25px;
     display: flex;
     justify-content: center; 
       
@@ -83,7 +167,49 @@ main{
     gap: 2rem;
 }
 
+@media(min-width: 750px){
+    
+    main{
+    min-width: 100%;
+        
+    }
+
+    .home_tittle{
+        font-size: 100px;
+    }
+
+    .home_semi_tittle {
+        font-size: 50px;
+    }
+
+    .home_img_content{
+        height: 400px;
+        width: 340px;
+        border-radius: 250px;
+        margin-top: 8rem;
+    }
+
+    .items_social{
+        gap: 12rem;
+    }
+
+    .items_social img{
+        height: 100px;
+    }
+
+   
+}
+
+.info div{
+    background-color: transparent;
+}
+
 .info{
+    
+    background-image: url(icons/VectorBriecfase.svg);
+    background-repeat: no-repeat;
+    background-position: right -2rem bottom 32rem ;
+    background-size: 6rem;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -99,19 +225,21 @@ main{
 
  
 .about_me{
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    font-family: "Rubik";
+    padding: 1rem;
+    font-weight: 400;
     font-size: 16px;
     color: var(--font_color);
     text-align: center;
 }
 
+ 
+
 .info_skills{
-    font-family: "Rubik";
     color: var(--font_color);
     display: flex;
     flex-direction: column;
@@ -120,71 +248,293 @@ main{
 }
 
 .info_skills h2{
-    font-family: "Rubik", Medium;
+    font-weight: 500;
     color: var(--white);
     font-size: 25px;
     margin: 0 0 3rem;
 }
-
-.info_experience h2{
-    font-family: "Rubik", Medium;
-    font-size: 25px;
-    color: var(--white);
-}
-
-.info_experience{
+.info_skills_item{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    gap: 2rem;
 }
 
+.item_mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item_mobile img{
+    background: transparent;
+    padding: 15px 8px 15px 8px;   
+}
+
+.item_mobile div {
+    background-color: var(--font_color);
+     border-radius: 100%;
+}
+
+.item_material{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item_material img{
+    background: transparent;
+    padding: 8px;
+}
+
+.item_material div{
+    background-color: var(--font_color);
+    border-radius: 100%;
+}
+
+.item_motion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item_motion img{
+    background: transparent; 
+    padding: 6px 8px 6px 8px;
+}
+
+.item_motion div{
+    background-color: var(--font_color);
+    border-radius: 100%;  
+}
+
+.item_web{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item_web img{
+    background: transparent;
+    padding: 8px;
+}
+
+.item_web div{
+    background-color: var(--font_color);
+    border-radius: 100%;
+}
+
+@media(min-width: 750px){
+
+    .info{
+        background-size: 12rem;
+        background-position: right -3rem bottom 3rem;
+    }
+    .about_me h2{
+        font-size: 50px;
+        margin-top: 2rem;
+    }
+
+    .about_me{
+        max-width: 1024px;
+    }
+    
+    .about_me p{
+        font-size: 18px;
+    }
+    .info_skills_item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 8rem;
+        row-gap: 4rem;
+    }
+     
+    .info_skills_item img{
+        width: 100px;
+    }
+
+    .info_skills h2{
+        font-size: 50px;
+    }
+
+    .item_motion{
+        
+        grid-column: 2/3;
+        grid-row: 1 / 2;
+    }
+
+
+}
+
+ 
+.info_experience h2{
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--white); 
+    
+}
+
+.info_experience h4{
+    font-weight: 500;
+    color: var(--white);
+    font-size: 18px;
+}
+
+.info_experience_subtittle{
+    display: flex;
+    margin: auto;
+    margin-bottom: 0.3rem;
+}
+
+ 
+ 
+.info_experience{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 4rem;
+    margin-bottom: -1rem;
+   
+} 
+
+ 
+
 .info_experience p{
-    font-family: "Rubik", Regular;
+    
+    font-weight: 400;
+    font-size: 16px;
     color: var(--font_color);
 }
 
 .info_experience_data{
-    margin-top: 2rem;
     display: flex;
-    gap: 3rem;
+    gap: 3rem;   
+}
+ 
+
+.info_experience hr{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--font_color);
+    opacity: 0.2;
 }
 
+@media(min-width: 750px){
+
+    .info_experience{
+          min-width: 800px;
+         margin: auto;
+         
+    }
+    .info_experience h2{
+        font-size: 50px;
+        margin-top: 6rem;
+    }
+
+    .info_experience h4{
+        font-size: 18px;
+    }
+
+    .info_experience p{
+        font-size: 18px;
+    }
+
+    .info_experience_data{
+        gap: 17.5rem;
+    }
+
+    .info_experience_datap{
+        margin-top: 2rem;
+    }
+
+    .info_experience hr{
+        margin-top: -0.5rem;
+    }
+
+   
+}
+ 
+ .briecfase{
+    background-image: url(icons/VectorBriecfase.svg);
+    background-repeat: no-repeat;
+    background-position:left -2.4rem top -3px;
+    background-size: 6rem;
+ }
+
+ .briecfase div{
+    background-color: transparent;
+ }
 .briecfase h2{
-    font-family: "Rubik", Medium;
+    font-weight: 500;
     font-size: 25px;
     color: white;
-    padding: 8rem 0 1rem 1.5rem;
+    background-color: transparent;
+    padding:  0 0 1rem  1rem;
+    margin-top: 5.3rem;
 }
 
 .briecfase_item{
     display: flex;
     flex-direction: column;  
-     align-items: center;
-     gap: 1rem;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+@media(min-width: 750px){
+    .briecfase{
+        background-size: 15rem;
+        background-position: left -10rem top 8rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        min-width: 100%;
+        margin: auto;
+        gap: 1.5rem;
+    }
+
+    .briecfase h2{
+        margin-top: 4rem;
+        font-size: 50px;
+    }
+
+    .briecfase_item{
+         flex-direction: row;
+         gap: 4rem;
+         
+    }
 }
 
 .contact h2{
-    font-family: "Rubik", Medium;
+     font-weight: 500;
     font-size: 25px;
     color: var(--white);
-    margin: 5rem 0 2rem 1.5rem;
+    margin: 1rem 0 1rem 1rem;
 }
 
 .contact{
     display: flex;
     flex-direction: column;
+    margin-top: 4rem;
 }
 .contact_item{
     display: flex;
     margin: auto;
-    gap: 1rem;  
+    gap: 2rem;  
 }
 
+.contact_item h2{
+    font-weight: 500;
+    color: var(--font_color);
+    font-size: 16px;
+    
+}
  
 .contact_item p{
-    font-family: "Rubik",Medium;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
     color: var(--font_color);
+    margin-top: -15px;
+     
 }
 
 .contact_item_data{  
@@ -196,12 +546,66 @@ main{
 }
 
 .contact_img_content{
-    border-radius:100%;
-    border: solid 1px #FFFFFF;
+    border-radius: 100%;
+    border: #FFFFFF solid 1px;
+    overflow: hidden;
+    
+  
 }
 
 .avatar{
     padding: 0.8rem;
+     
+}
+
+.footer{
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.footer p{
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--font_color);
+    margin-bottom: 3rem;
+}
+
+@media(min-width: 750px){
+    .contact{
+        text-align: center;
+    }
+    .contact h2{
+        font-size: 50px;
+    }
+
+    .contact_item h2{
+        font-size: 18px;
+    }
+
+    .contact_item p{
+        font-size: 18px; 
+        margin-top: 0px;  
+    }
+
+    .contact_item{
+        gap: 5rem;
+    }
+
+    .contact_img_content{
+        border-radius: 45px;
+        padding: 0.8rem;
+        margin-top: 1rem;
+        
+    }
+
+    .contact_img_content img{
+        width: 4.5rem;   
+    }
+
+    .footer p{
+        font-size: 18px;
+    }
 }
 
 
