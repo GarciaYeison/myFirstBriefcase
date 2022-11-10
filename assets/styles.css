@@ -540,13 +540,13 @@ main{
     padding: 0.8rem;
 }
 
-.footer{
+.footer__contact{
     display: flex;
     margin: auto;
     margin-top: 3rem;
 }
 
-.footer p{
+.footer__contact p{
     font-weight: 400;
     font-size: 18px;
     color: var(--font_color);
@@ -584,8 +584,13 @@ main{
     .contact_img_content img{
         width: 4.5rem;   
     }
+}
 
-    .footer p{
-        font-size: 18px;
-    }
+.footer{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--font_color);
+    font-weight: 500;
+    padding: 1rem;
 }
